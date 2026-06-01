@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Modalidades | Studio Gabriela Saad</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#364956",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-surface-variant": "#43474b",
+                        "surface": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#b5c9d9",
+                        "secondary-container": "#e7e2da",
+                        "tertiary-fixed": "#fedcc6",
+                        "surface-bright": "#f9f9f9",
+                        "inverse-primary": "#b5c9d9",
+                        "surface-container": "#eeeeee",
+                        "secondary": "#615e58",
+                        "secondary-fixed": "#e7e2da",
+                        "background": "#f9f9f9",
+                        "on-secondary-fixed": "#1d1c17",
+                        "on-secondary-container": "#67645e",
+                        "on-secondary-fixed-variant": "#494741",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary-fixed-variant": "#584232",
+                        "outline": "#73777c",
+                        "on-primary-container": "#def0ff",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-primary-fixed": "#091e29",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#29180a",
+                        "primary-container": "#5b6e7c",
+                        "surface-tint": "#4e616e",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c3c7cb",
+                        "secondary-fixed-dim": "#cac6be",
+                        "on-surface": "#1a1c1c",
+                        "tertiary": "#664f3e",
+                        "tertiary-container": "#806755",
+                        "on-tertiary-container": "#ffebde",
+                        "primary-fixed": "#d1e5f5",
+                        "surface-variant": "#e2e2e2",
+                        "on-background": "#1a1c1c",
+                        "surface-dim": "#dadada",
+                        "primary": "#435663",
+                        "tertiary-fixed-dim": "#e0c0ab"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "stack-sm": "8px",
+                        "margin-desktop": "80px",
+                        "stack-xs": "4px",
+                        "stack-md": "16px",
+                        "stack-2xl": "128px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "32px",
+                        "gutter": "24px",
+                        "stack-xl": "64px"
+                    },
+                    fontFamily: {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-italic": ["Playfair Display"],
+                        "headline-md": ["Archivo Narrow"],
+                        "display-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Archivo Narrow"]
+                    },
+                    fontSize: {
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "display-lg-italic": ["64px", { lineHeight: "72px", fontWeight: "400", fontStyle: "italic" }],
+                        "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "0.1em", fontWeight: "700" }],
+                        "display-mobile": ["40px", { lineHeight: "48px", fontWeight: "400" }],
+                        "display-lg": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "400" }],
+                        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.15em", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .accordion-content { transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; max-height: 0; opacity: 0; overflow: hidden; }
+        .accordion-content.open { max-height: 500px; opacity: 1; }
+        .icon-rotate { transition: transform 0.3s ease; }
+        .open .icon-rotate { transform: rotate(45deg); }
+    </style>
+</head>
+<body class="bg-secondary-fixed text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 backdrop-blur-md dark:bg-surface-dim/90 sticky top-0 z-50 w-full border-b border-primary/20 dark:border-primary-fixed-dim/20 transition-all duration-300">
+<div class="flex justify-between items-center w-full h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md tracking-widest text-primary dark:text-primary-fixed-dim uppercase hover:opacity-80 transition-all duration-300" href="#">
+                Studio Gabriela Saad
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex space-x-gutter items-center">
+<a class="text-on-surface-variant dark:text-outline font-label-caps text-label-caps hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 duration-300 uppercase" href="#">Sobre</a>
+<a class="font-label-caps text-label-caps text-primary dark:text-primary-fixed-dim border-b border-primary dark:border-primary-fixed-dim pb-1 hover:opacity-80 transition-all duration-300 uppercase" href="#">Modalidades</a>
+<a class="text-on-surface-variant dark:text-outline font-label-caps text-label-caps hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 duration-300 uppercase" href="#">Professoras</a>
+<a class="text-on-surface-variant dark:text-outline font-label-caps text-label-caps hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 duration-300 uppercase" href="#">Blog</a>
+<a class="text-on-surface-variant dark:text-outline font-label-caps text-label-caps hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 duration-300 uppercase" href="#">Contato</a>
+</div>
+<!-- Trailing Action -->
+<a class="hidden md:inline-flex bg-on-surface text-surface px-6 py-3 font-label-caps text-label-caps hover:opacity-80 transition-all duration-300 uppercase active:scale-95" href="#">
+                Agende uma aula
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Interno -->
+<section class="pt-stack-2xl pb-stack-xl px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto w-full text-center">
+<h1 class="font-display-mobile text-display-mobile md:font-display-lg md:text-display-lg text-primary mb-stack-lg max-w-4xl mx-auto leading-tight">
+                NOSSAS MODALIDADES: <br/>
+<span class="font-display-lg-italic text-display-lg-italic text-secondary">pilates para cada fase da vida</span>
+</h1>
+<!-- Filters -->
+<div class="flex flex-wrap justify-center gap-stack-sm mt-stack-lg">
+<button class="px-6 py-2 border border-primary text-primary font-label-caps text-label-caps uppercase bg-primary/5 hover:bg-primary/10 transition-colors">Todas</button>
+<button class="px-6 py-2 border border-primary text-primary font-label-caps text-label-caps uppercase hover:bg-primary/5 transition-colors">Reformer</button>
+<button class="px-6 py-2 border border-primary text-primary font-label-caps text-label-caps uppercase hover:bg-primary/5 transition-colors">Solo</button>
+<button class="px-6 py-2 border border-primary text-primary font-label-caps text-label-caps uppercase hover:bg-primary/5 transition-colors">Terapêutico</button>
+<button class="px-6 py-2 border border-primary text-primary font-label-caps text-label-caps uppercase hover:bg-primary/5 transition-colors">Outros</button>
+</div>
+</section>
+<!-- Lista de Modalidades -->
+<section class="py-stack-2xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full flex flex-col gap-stack-2xl">
+<!-- Item 1: Reformer (Left Image) -->
+<article class="flex flex-col md:flex-row items-center gap-margin-desktop">
+<div class="w-full md:w-1/2 aspect-[4/5] bg-surface-container-high relative overflow-hidden group">
+<img alt="Pilates Reformer" class="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105" data-alt="A high-fashion editorial photograph of a modern pilates studio. A focused instructor demonstrates an advanced pose on a wooden reformer machine. The studio is bathed in bright, soft, diffused natural light creating a serene, wellness aesthetic. The color palette relies heavily on pristine whites, soft creme, and slate blue accents. The mood is precise, elegant, and athletic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQI74O44J78hrWojxSh7_Z_OMV8G8RP-1mCSj6t5Cqwl3Hcx920nBOUp_kDJwzuL0axkJRlGhPeSFufL4y00zyzyczxqBWi-U_z-XQAMBNwp2purRuVXtaowyL_ggwO_S7raHojrumzFjdvx9SqFPpNn4XSVKxvKVsHINsIvaVwcslt-_hILGsoLxS9YeReA64NhE_KwRuW2mZE1x_tox8rUOy06uKWVvnxM2MPftjrPj4-_9jLe4sARje5iCKeXrqPsPGhRbtZLg4"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col items-start max-w-lg">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase mb-stack-xs border border-secondary/30 px-3 py-1 rounded-full">Nível: Todos</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md uppercase">Reformer Pilates</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                        O clássico método de estúdio. Utilizando a resistência de molas do equipamento Reformer, esta modalidade promove o alinhamento postural, alongamento profundo e tonificação muscular com baixo impacto nas articulações. Ideal para desenvolver força central (core) e fluidez de movimento.
+                    </p>
+<a class="font-label-caps text-label-caps text-primary hover:text-accent transition-colors flex items-center gap-2 group uppercase" href="#">
+                        Agendar Aula <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Item 2: Solo (Right Image) -->
+<article class="flex flex-col md:flex-row-reverse items-center gap-margin-desktop">
+<div class="w-full md:w-1/2 aspect-[4/5] bg-surface-container-high relative overflow-hidden group">
+<img alt="Pilates Solo" class="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105" data-alt="An elegant, minimalist shot of a woman performing Mat Pilates on a soft grey mat. The setting is a spacious, high-end wellness sanctuary with expansive white walls and light oak floors. Sunlight streams through large unseen windows, highlighting her precise form. The aesthetic is serene, uncluttered, and editorial, utilizing a palette of neutral tones and slate blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKfcQO4f8owIXjeYx-3KvXppmMI0dWQJhfpXFPoF8uNU2B2wwBgp_h1UpwNsC1HGUzY87rnWxooraa2HCpjSB8TeRhkHhLNCfBSRQYqd3dj2qFRKX-eO1MVY0CaVGqdCOeriA9iJc3Ia2rDE8EfN7oS4v6iVQU8Ep3l1CuFQ68Xzrkod6dUNp7dosNRg7nD5G-YE2WQ-yHqGtseTGxT_ikXCNTLdxBrIvVEdBt2yRMszYzXqbrUuiTjh7QSZjpmyqbqmHskR3RmCTu"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col items-start max-w-lg">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase mb-stack-xs border border-secondary/30 px-3 py-1 rounded-full">Nível: Intermediário</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md uppercase">Mat Pilates (Solo)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                        A essência do controle corporal. O Pilates de solo desafia a gravidade utilizando o peso do próprio corpo e acessórios como bolas e faixas. Focado na respiração e na precisão, é um trabalho intenso que constrói resiliência mental e estabilidade física incomparáveis.
+                    </p>
+<a class="font-label-caps text-label-caps text-primary hover:text-accent transition-colors flex items-center gap-2 group uppercase" href="#">
+                        Agendar Aula <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">chevron_right</span>
+</a>
+</div>
+</article>
+</section>
+<!-- FAQ Section -->
+<section class="py-stack-2xl px-margin-mobile md:px-margin-desktop max-w-[800px] mx-auto w-full">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-xl text-center uppercase tracking-widest">Dúvidas Frequentes</h2>
+<div class="flex flex-col border-t border-primary/20">
+<!-- FAQ Item 1 -->
+<div class="border-b border-primary/20 py-stack-md cursor-pointer group js-faq-item">
+<div class="flex justify-between items-center">
+<h3 class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">Qual a diferença entre o Reformer e o Solo?</h3>
+<span class="material-symbols-outlined text-primary icon-rotate" style="font-variation-settings: 'FILL' 0;">add</span>
+</div>
+<div class="accordion-content font-body-md text-body-md text-on-surface-variant mt-stack-sm pr-12">
+                        O Reformer utiliza molas para criar resistência ou assistência, sendo excelente para alinhar o corpo e isolar músculos. O Solo exige que você suporte seu próprio peso contra a gravidade, focando intensamente no core e no controle neuromuscular.
+                    </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="border-b border-primary/20 py-stack-md cursor-pointer group js-faq-item">
+<div class="flex justify-between items-center">
+<h3 class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">Nunca fiz Pilates, posso começar?</h3>
+<span class="material-symbols-outlined text-primary icon-rotate" style="font-variation-settings: 'FILL' 0;">add</span>
+</div>
+<div class="accordion-content font-body-md text-body-md text-on-surface-variant mt-stack-sm pr-12">
+                        Absolutamente. Nossas aulas são adaptáveis e nossos instrutores são treinados para modificar os exercícios conforme a sua necessidade e experiência. Recomendamos começar pelas turmas de nível iniciante ou agendar uma avaliação.
+                    </div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-stack-2xl px-margin-mobile md:px-margin-desktop text-center bg-surface w-full mt-stack-2xl">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-display-mobile text-display-mobile md:font-display-lg md:text-display-lg text-primary mb-stack-md leading-tight">
+                    Não sabe qual modalidade é ideal?
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                    Converse com nossa equipe. Faremos uma avaliação do seu perfil para indicar o melhor caminho para o seu bem-estar.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-stack-md">
+<a class="bg-on-surface text-surface px-8 py-4 font-label-caps text-label-caps uppercase hover:opacity-80 transition-all duration-300" href="#">
+                        Ver Planos
+                    </a>
+<a class="border border-primary text-primary px-8 py-4 font-label-caps text-label-caps uppercase hover:bg-primary hover:text-surface transition-all duration-300 flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">chat</span>
+                        WhatsApp
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest border-t border-primary/10 dark:border-primary-fixed-dim/10 full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-xl max-w-[1440px] mx-auto">
+<!-- Brand Column -->
+<div class="flex flex-col gap-stack-sm md:col-span-1">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim uppercase">STUDIO GABRIELA SAAD</span>
+<p class="font-body-md text-body-md text-on-secondary-container dark:text-outline-variant mt-2">
+                    Pilates Premium &amp; Bem-estar Integral.
+                </p>
+</div>
+<!-- Links Columns -->
+<div class="flex flex-col gap-stack-md md:col-start-3">
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors uppercase" href="#">Privacidade</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors uppercase" href="#">Termos de Uso</a>
+</div>
+<div class="flex flex-col gap-stack-md">
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors uppercase" href="#">FAQ</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors uppercase" href="#">Trabalhe Conosco</a>
+</div>
+<!-- Copyright -->
+<div class="col-span-1 md:col-span-4 mt-stack-lg pt-stack-md border-t border-primary/10 dark:border-primary-fixed-dim/10 text-center md:text-left">
+<p class="font-body-md text-body-md text-on-secondary-container dark:text-outline-variant">
+                    © 2024 Studio Gabriela Saad. Todos os direitos reservados.
+                </p>
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script>
+        // FAQ Accordion Logic
+        document.querySelectorAll('.js-faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.querySelector('.accordion-content');
+                const isOpen = item.classList.contains('open');
+                
+                // Close all others
+                document.querySelectorAll('.js-faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('open');
+                    let icon = otherItem.querySelector('.material-symbols-outlined');
+                    if(icon) icon.textContent = 'add';
+                });
+
+                if (!isOpen) {
+                    item.classList.add('open');
+                    item.querySelector('.material-symbols-outlined').textContent = 'remove';
+                }
+            });
+        });
+    </script>
+</body></html>

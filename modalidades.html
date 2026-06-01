@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modalidades de Pilates em São Paulo | Reformer, Solo e Terapêutico – Studio Gabriela Saad</title>
+  <meta name="description" content="Conheça as modalidades de pilates do Studio Gabriela Saad em São Paulo: Pilates Reformer, Mat Pilates (Solo) e Pilates Terapêutico. Turmas para todos os níveis e idades nos Jardins, SP." />
+  <link rel="canonical" href="https://www.studiogabrielasaad.com.br/modalidades.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.studiogabrielasaad.com.br/modalidades.html" />
+  <meta property="og:title" content="Modalidades de Pilates em São Paulo | Studio Gabriela Saad" />
+  <meta property="og:description" content="Pilates Reformer, Mat Pilates e Pilates Terapêutico. Professoras certificadas, turmas reduzidas, Jardins – São Paulo." />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"Modalidades de Pilates – Studio Gabriela Saad","url":"https://www.studiogabrielasaad.com.br/modalidades.html","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Service","name":"Pilates Reformer","description":"Método de estúdio com resistência de molas do equipamento Reformer para alinhamento postural e tonificação muscular com baixo impacto.","provider":{"@type":"LocalBusiness","name":"Studio Gabriela Saad","address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP"}}}},{"@type":"ListItem","position":2,"item":{"@type":"Service","name":"Mat Pilates (Solo)","description":"Pilates de solo focado no controle corporal, respiração e força do core utilizando o peso do próprio corpo.","provider":{"@type":"LocalBusiness","name":"Studio Gabriela Saad"}}},{"@type":"ListItem","position":3,"item":{"@type":"Service","name":"Pilates Terapêutico","description":"Protocolo individualizado para reabilitação, dores crônicas, gestação e condições especiais, conduzido por fisioterapeuta.","provider":{"@type":"LocalBusiness","name":"Studio Gabriela Saad"}}}]}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Playfair+Display:ital,wght@0,400;1,400&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>tailwind.config={theme:{extend:{colors:{"primary":"#435663","on-primary":"#ffffff","primary-fixed":"#d1e5f5","primary-fixed-dim":"#b5c9d9","on-primary-fixed":"#091e29","on-primary-fixed-variant":"#364956","surface-tint":"#4e616e","secondary":"#615e58","secondary-container":"#e7e2da","secondary-fixed":"#e7e2da","on-secondary-container":"#67645e","tertiary":"#664f3e","on-tertiary":"#ffffff","surface":"#f9f9f9","surface-container-lowest":"#ffffff","surface-container-low":"#f3f3f4","surface-container":"#eeeeee","surface-container-high":"#e8e8e8","surface-dim":"#dadada","on-surface":"#1a1c1c","on-surface-variant":"#43474b","outline":"#73777c","outline-variant":"#c3c7cb"},fontFamily:{"display":["Playfair Display","serif"],"headline":["Archivo Narrow","sans-serif"],"body":["Plus Jakarta Sans","sans-serif"]},spacing:{"stack-xs":"4px","stack-sm":"8px","stack-md":"16px","stack-lg":"32px","stack-xl":"64px","stack-2xl":"128px","gutter":"24px","margin-mobile":"20px","margin-desktop":"80px"}}}}</script>
+  <style>
+    .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24}
+    .accordion-content{max-height:0;opacity:0;overflow:hidden;transition:max-height .35s ease,opacity .3s ease}
+    .accordion-content.open{max-height:400px;opacity:1}
+    #mobile-menu{display:none}
+    #mobile-menu.open{display:flex}
+
+    /* ─── Section Shifting Effect ─── */
+
+    @keyframes section-rise {
+      from { transform: translateY(-50%); }
+      to   { transform: translateY(0%); }
+    }
+
+    @keyframes overlay-fade {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+    }
+
+    .modalities-block {
+      overflow: clip;
+    }
+
+    .modality {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .modality--1 { z-index: 3; }
+    .modality--2 { z-index: 2; }
+    .modality--3 { z-index: 1; }
+
+    .modality--2::after,
+    .modality--3::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: #1a1c1c;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .modality--2 {
+      will-change: transform;
+      animation: section-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 60%;
+    }
+    .modality--2::after {
+      animation: overlay-fade linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 60%;
+    }
+
+    .modality--3 {
+      will-change: transform;
+      animation: section-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 60%;
+    }
+    .modality--3::after {
+      animation: overlay-fade linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 60%;
+    }
+  </style>
+</head>
+<body class="bg-secondary-fixed text-on-surface font-body antialiased overflow-x-hidden">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-primary/20">
+  <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop h-20 flex items-center justify-between">
+    <a href="index.html"><img src="studio_saad.svg" alt="Studio Gabriela Saad" class="h-10 w-auto" /></a>
+    <ul class="hidden md:flex items-center gap-8">
+      <li><a href="index.html"       class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant hover:text-primary transition-colors">Home</a></li>
+      <li><a href="sobre.html"       class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant hover:text-primary transition-colors">Sobre</a></li>
+      <li><a href="modalidades.html" class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-primary border-b border-primary pb-0.5">Modalidades</a></li>
+      <li><a href="professoras.html" class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant hover:text-primary transition-colors">Professoras</a></li>
+      <li><a href="agenda.html"      class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant hover:text-primary transition-colors">Agenda</a></li>
+      <li><a href="contato.html"     class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant hover:text-primary transition-colors">Contato</a></li>
+    </ul>
+    <a href="agenda.html" class="hidden md:inline-flex bg-on-surface text-surface font-headline text-[11px] tracking-[0.15em] font-semibold uppercase px-6 py-3 hover:opacity-80 transition-opacity">Agende uma aula</a>
+    <button id="menu-toggle" class="md:hidden text-primary p-2" aria-label="Menu"><span class="material-symbols-outlined text-[28px]">menu</span></button>
+  </div>
+  <div id="mobile-menu" class="flex-col bg-surface border-t border-primary/10 px-margin-mobile py-stack-md gap-stack-sm md:hidden">
+    <a href="index.html"       class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant py-3 border-b border-primary/10">Home</a>
+    <a href="sobre.html"       class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant py-3 border-b border-primary/10">Sobre</a>
+    <a href="modalidades.html" class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-primary py-3 border-b border-primary/10">Modalidades</a>
+    <a href="professoras.html" class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant py-3 border-b border-primary/10">Professoras</a>
+    <a href="agenda.html"      class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant py-3 border-b border-primary/10">Agenda</a>
+    <a href="contato.html"     class="font-headline text-[12px] tracking-[0.15em] font-semibold uppercase text-on-surface-variant py-3 border-b border-primary/10">Contato</a>
+    <a href="agenda.html"      class="mt-2 bg-on-surface text-surface font-headline text-[11px] tracking-[0.15em] font-semibold uppercase px-6 py-3 text-center">Agende uma aula</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="pt-stack-2xl pb-stack-xl px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto text-center">
+    <h1 class="font-display text-[40px] md:text-[64px] leading-[1.1] text-primary mb-stack-lg max-w-4xl mx-auto">
+      NOSSAS MODALIDADES:<br/>
+      <em class="not-italic italic text-secondary">pilates para cada fase da vida</em>
+    </h1>
+    <p class="font-body text-[18px] leading-[28px] text-on-surface-variant max-w-2xl mx-auto">Oferecemos três modalidades complementares para que cada aluno encontre o caminho ideal para o seu bem-estar, independentemente do nível ou condição física.</p>
+  </section>
+
+  <!-- ─── BLOCO DAS 3 MODALIDADES — Section Shifting ativo ─── -->
+  <div class="modalities-block">
+
+    <!-- SEÇÃO 1: PILATES REFORMER -->
+    <section id="reformer" class="modality modality--1 bg-[#435663] px-margin-mobile md:px-margin-desktop" itemscope itemtype="https://schema.org/Service">
+      <div class="max-w-[1440px] mx-auto h-full min-h-screen flex items-center py-stack-2xl">
+        <article class="flex flex-col md:flex-row items-center gap-margin-desktop w-full">
+          <div class="w-full md:w-1/2 aspect-[4/5] overflow-hidden group">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQI74O44J78hrWojxSh7_Z_OMV8G8RP-1mCSj6t5Cqwl3Hcx920nBOUp_kDJwzuL0axkJRlGhPeSFufL4y00zyzyczxqBWi-U_z-XQAMBNwp2purRuVXtaowyL_ggwO_S7raHojrumzFjdvx9SqFPpNn4XSVKxvKVsHINsIvaVwcslt-_hILGsoLxS9YeReA64NhE_KwRuW2mZE1x_tox8rUOy06uKWVvnxM2MPftjrPj4-_9jLe4sARje5iCKeXrqPsPGhRbtZLg4"
+                 alt="Aula de Pilates Reformer no Studio Gabriela Saad – Jardins, São Paulo" itemprop="image"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div class="w-full md:w-1/2 flex flex-col items-start max-w-lg">
+            <span class="font-headline text-[10px] tracking-[0.15em] font-semibold uppercase text-white/60 border border-white/20 px-3 py-1 rounded-full mb-stack-sm">Nível: Todos</span>
+            <h2 class="font-headline text-[24px] leading-[32px] tracking-[0.1em] font-bold uppercase text-white mb-stack-md" itemprop="name">Pilates Reformer</h2>
+            <p class="font-body text-[16px] leading-[26px] text-white/80 mb-stack-md" itemprop="description">O clássico método de estúdio. Utilizando a resistência de molas do equipamento Reformer, esta modalidade promove o alinhamento postural, alongamento profundo e tonificação muscular com baixo impacto nas articulações.</p>
+            <p class="font-body text-[16px] leading-[26px] text-white/70 mb-stack-lg">Ideal para desenvolver força central (core) e fluidez de movimento. Adequado para iniciantes, gestantes, idosos e atletas de alto desempenho.</p>
+            <div class="flex flex-wrap gap-2 mb-stack-lg">
+              <span class="bg-white/10 px-3 py-1 font-headline text-[10px] tracking-[0.1em] font-semibold uppercase text-white">Alinhamento postural</span>
+              <span class="bg-white/10 px-3 py-1 font-headline text-[10px] tracking-[0.1em] font-semibold uppercase text-white">Baixo impacto</span>
+              <span class="bg-white/10 px-3 py-1 font-headline text-[10px] tracking-[0.1em] font-semibold uppercase text-white">Força de core</span>
+            </div>
+            <a href="agenda.html" class="font-headline text-[11px] tracking-[0.15em] font-semibold uppercase text-white flex items-center gap-2 hover:gap-3 transition-all duration-200">Agendar Aula <span class="material-symbols-outlined text-[16px]">chevron_right</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: MAT PILATES (SOLO) -->
+    <section id="solo" class="modality modality--2 bg-[#f9f9f9] px-margin-mobile md:px-margin-desktop" itemscope itemtype="https://schema.org/Service">
+      <div class="max-w-[1440px] mx-auto h-full min-h-screen flex items-center py-stack-2xl">
+        <article class="flex flex-col md:flex-row-reverse items-center gap-margin-desktop w-full">
+          <div class="w-full md:w-1/2 aspect-[4/5] overflow-hidden group">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKfcQO4f8owIXjeYx-3KvXppmMI0dWQJhfpXFPoF8uNU2B2wwBgp_h1UpwNsC1HGUzY87rnWxooraa2HCpjSB8TeRhkHhLNCfBSRQYqd3dj2qFRKX-eO1MVY0CaVGqdCOeriA9iJc3Ia2rDE8EfN7oS4v6iVQU8Ep3l1CuFQ68Xzrkod6dUNp7dosNRg7nD5G-YE2WQ-yHqGtseTGxT_ikXCNTLdxBrIvVEdBt2yRMszYzXqbrUuiTjh7QSZjpmyqbqmHskR3RmCTu"
+                 alt="Aula de Mat Pilates Solo no Studio Gabriela Saad São Paulo" itemprop="image"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div class="w-full md:w-1/2 flex flex-col items-start max-w-lg">
+            <span class="font-headline text-[10px] tracking-[0.15em] font-semibold uppercase text-secondary border border-secondary/30 px-3 py-1 rounded-full mb-stack-sm">Nível: Intermediário</span>
+            <h2 class="font-headline text-[24px] leading-[32px] tracking-[0.1em] font-bold uppercase text-primary mb-stack-md" itemprop="name">Mat Pilates (Solo)</h2>
+            <p class="font-body text-[16px] leading-[26px] text-on-surface-variant mb-stack-md" itemprop="description">A essência do controle corporal. O Pilates de solo desafia a gravidade utilizando o peso do próprio corpo e acessórios como bolas e faixas elásticas.</p>
+            <p class="font-body text-[16px] leading-[26px] text-on-surface-variant mb-stack-lg">Focado na respiração e na precisão, é um trabalho intenso que constrói resiliência mental e estabilidade física incomparáveis. Ideal para quem já possui base em pilates.</p>
+            <div class="flex flex-wrap gap-2 mb-stack-lg">
+              <span class="bg-surface-container px-3 py-1 font-headline text-[10px] tracking-[0.1em] font-semibold uppercase text-primary">Controle corporal</span>
+              <span class="bg-surface-container px-3 py-1 font-headline text-[10px] tracking-[0.1em] font-semibold uppercase text-primary">Respiração</span>
+              <span class="bg-surface-container px-3 py-1 font-headline text-[10px] tracking-[0.1em] font-semibold uppercase text-primary">Resistência</span>
+            </div>
+            <a href="agenda.html" class="font-headline text-[11px] tracking-[0.15em] font-semibold uppercase text-primary flex items-center gap-2 hover:gap-3 transition-all duration-200">Agendar Aula <span class="material-symbols-outlined text-[16px]">chevron_right</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: PILATES TERAPÊUTICO -->
+    <section id="terapeutico" class="modality modality--3 bg-[#e7e2da] px-margin-mobile md:px-margin-desktop" itemscope itemtype="https://schema.org/Service">
+      <div class="max-w-[1440px] mx-auto h-full min-h-screen flex items-center py-stack-2xl">
+        <article class="flex flex-col md:flex-row items-center gap-margin-desktop w-full">
+          <div class="w-full md:w-1/2 aspect-[4/5] overflow-hidden group bg-surface-container-high">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuADjJpEh9E7e-snGdZXQAswgejbehkKi06qmcB9Kg-djoPg2LqfPHULGsUsJ6tERVt2gMwgpdEX6b9RR9Tgz1NC_RKrmHLpE7cXLXeWwyY0dF3T1KZ8_bnn8-Y8DCX8PYM9FV-qXNMnpqE_PAM80SiMjRDAlzS1vXkiFJBdxPHOEnzkTyKiJP65lQoV1I8PCK-Yu3gPoInN50Of5KFLUGBWnm3X3PsnUN-u-zkZ_A2AGncd-tkit64_x-ZyZV2CbX_ayZqjGqsfJqn7"
+                 alt="Pilates Terapêutico e reabilitação de lesões em São Paulo" itemprop="image"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div class="w-full md:w-1/2 flex flex-col items-start max-w-lg">
+            <span class="font-headline text-[10px] tracking-[0.15em] font-semibold uppercase text-secondary border border-secondary/30 px-3 py-1 rounded-full mb-stack-sm">Todos os níveis · Reabilitação</span>
+            <h2 class="font-headline text-[24px] leading-[32px] tracking-[0.1em] font-bold uppercase text-primary mb-stack-md" itemprop="name">Pilates Terapêutico</h2>
+            <p class="font-body text-[16px] leading-[26px] text-on-surface-variant mb-stack-md" itemprop="description">Indicado para reabilitação de lesões ortopédicas e neurológicas, dores crônicas na coluna, joelho, quadril e condições especiais como gestação, pós-parto e osteoporose.</p>
+            <p class="font-body text-[16px] leading-[26px] text-on-surface-variant mb-stack-lg">Conduzido por fisioterapeuta, o protocolo é 100% individualizado para restaurar função, aliviar dor e promover qualidade de vida com total segurança.</p>
+            <div class="flex flex-wrap gap-2 mb-stack-lg">
+              <span class="bg-white/60 px-3 py-1 font-headline text-[10px] tracking-[0.1em] font-semibold uppercase text-primary">Reabilitação</span>
+              <span class="bg-white/60 px-3 py-1 font-headline text-[10px] tracking-[0.1em] font-semibold uppercase text-primary">Gestantes</span>
+              <span class="bg-white/60 px-3 py-1 font-headline text-[10px] tracking-[0.1em] font-semibold uppercase text-primary">Dores crônicas</span>
+            </div>
+            <a href="agenda.html" class="font-headline text-[11px] tracking-[0.15em] font-semibold uppercase text-primary flex items-center gap-2 hover:gap-3 transition-all duration-200">Agendar Avaliação <span class="material-symbols-outlined text-[16px]">chevron_right</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </div>
+  <!-- ─── FIM DO BLOCO DE MODALIDADES ─── -->
+
+  <!-- FAQ -->
+  <section class="py-stack-2xl bg-surface border-t border-primary/10">
+    <div class="max-w-[720px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <h2 class="font-headline text-[13px] tracking-[0.15em] font-bold uppercase text-primary text-center mb-stack-xl">Dúvidas Frequentes sobre Pilates em São Paulo</h2>
+      <div class="border-t border-primary/20">
+        <div class="js-faq border-b border-primary/20 py-stack-md cursor-pointer group">
+          <div class="flex justify-between items-center"><p class="font-body text-[18px] leading-[28px] text-on-surface group-hover:text-primary transition-colors pr-8">Qual a diferença entre o Reformer e o Mat Pilates?</p><span class="material-symbols-outlined text-primary faq-icon flex-shrink-0">add</span></div>
+          <div class="accordion-content font-body text-[16px] leading-[24px] text-on-surface-variant mt-stack-sm">O Reformer utiliza molas para criar resistência ou assistência, excelente para alinhar o corpo e isolar músculos. O Mat Pilates exige que você suporte seu peso contra a gravidade, focando intensamente no core e no controle neuromuscular. Ambos se complementam.</div>
+        </div>
+        <div class="js-faq border-b border-primary/20 py-stack-md cursor-pointer group">
+          <div class="flex justify-between items-center"><p class="font-body text-[18px] leading-[28px] text-on-surface group-hover:text-primary transition-colors pr-8">Nunca fiz Pilates, posso começar pelo Reformer?</p><span class="material-symbols-outlined text-primary faq-icon flex-shrink-0">add</span></div>
+          <div class="accordion-content font-body text-[16px] leading-[24px] text-on-surface-variant mt-stack-sm">Sim. O Reformer é excelente para iniciantes pois as molas oferecem suporte e assistência ao movimento. Nossas instrutoras adaptam cada exercício ao nível de cada aluno. Recomendamos começar com uma avaliação para definir o protocolo ideal.</div>
+        </div>
+        <div class="js-faq border-b border-primary/20 py-stack-md cursor-pointer group">
+          <div class="flex justify-between items-center"><p class="font-body text-[18px] leading-[28px] text-on-surface group-hover:text-primary transition-colors pr-8">O Pilates Terapêutico substitui a fisioterapia?</p><span class="material-symbols-outlined text-primary faq-icon flex-shrink-0">add</span></div>
+          <div class="accordion-content font-body text-[16px] leading-[24px] text-on-surface-variant mt-stack-sm">O Pilates Terapêutico é conduzido por fisioterapeuta e pode complementar ou ser parte de um processo de reabilitação. Em muitos casos é indicado após a fase aguda da lesão, potencializando os resultados com ênfase em força, estabilidade e prevenção.</div>
+        </div>
+        <div class="js-faq border-b border-primary/20 py-stack-md cursor-pointer group">
+          <div class="flex justify-between items-center"><p class="font-body text-[18px] leading-[28px] text-on-surface group-hover:text-primary transition-colors pr-8">Quantas aulas por semana são recomendadas?</p><span class="material-symbols-outlined text-primary faq-icon flex-shrink-0">add</span></div>
+          <div class="accordion-content font-body text-[16px] leading-[24px] text-on-surface-variant mt-stack-sm">Para iniciantes, 2 vezes por semana é o ideal para criar base e consciência corporal. Alunos intermediários e avançados podem praticar 3 a 4 vezes por semana para resultados mais expressivos. Nossa equipe orienta a frequência na avaliação inicial.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-stack-2xl bg-surface-container-lowest border-t border-primary/10">
+    <div class="max-w-2xl mx-auto px-margin-mobile text-center flex flex-col items-center gap-stack-lg">
+      <h2 class="font-display text-[36px] md:text-[48px] leading-[1.1] text-primary">Não sabe qual modalidade é ideal?</h2>
+      <p class="font-body text-[18px] leading-[28px] text-on-surface-variant">Converse com nossa equipe. Faremos uma avaliação do seu perfil para indicar o melhor caminho para o seu bem-estar.</p>
+      <div class="flex flex-col sm:flex-row gap-stack-md">
+        <a href="agenda.html" class="bg-on-surface text-surface font-headline text-[11px] tracking-[0.15em] font-semibold uppercase px-8 py-4 hover:opacity-80 transition-opacity">Agendar Avaliação</a>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary font-headline text-[11px] tracking-[0.15em] font-semibold uppercase px-8 py-4 hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-surface-container border-t border-primary/10">
+  <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl grid grid-cols-1 md:grid-cols-4 gap-gutter">
+    <div class="md:col-start-1 md:col-span-2 flex flex-col gap-stack-md"><img src="studio_saad.svg" alt="Studio Gabriela Saad" class="h-8 w-auto" /><p class="font-body text-[15px] leading-[24px] text-on-surface-variant max-w-sm">Pilates Premium e bem-estar integral no coração dos Jardins, São Paulo.</p></div>
+    <nav aria-label="Links do site"><p class="font-headline text-[11px] tracking-[0.15em] font-semibold uppercase text-primary mb-3">Páginas</p><ul class="flex flex-col gap-2"><li><a href="sobre.html" class="font-body text-[15px] text-on-surface-variant hover:text-primary transition-colors">Sobre</a></li><li><a href="modalidades.html" class="font-body text-[15px] text-on-surface-variant hover:text-primary transition-colors">Modalidades</a></li><li><a href="professoras.html" class="font-body text-[15px] text-on-surface-variant hover:text-primary transition-colors">Professoras</a></li><li><a href="agenda.html" class="font-body text-[15px] text-on-surface-variant hover:text-primary transition-colors">Agenda</a></li><li><a href="contato.html" class="font-body text-[15px] text-on-surface-variant hover:text-primary transition-colors">Contato</a></li></ul></nav>
+    <div><p class="font-headline text-[11px] tracking-[0.15em] font-semibold uppercase text-primary mb-3">Contato</p><address class="not-italic flex flex-col gap-2"><a href="tel:+5511999999999" class="font-body text-[15px] text-on-surface-variant hover:text-primary transition-colors">(11) 99999-9999</a><a href="mailto:ola@studiogabrielasaad.com.br" class="font-body text-[15px] text-on-surface-variant hover:text-primary transition-colors">ola@studiogabrielasaad.com.br</a><span class="font-body text-[15px] text-on-surface-variant">Rua das Acácias, 123 – Jardins, SP</span></address></div>
+  </div>
+  <div class="border-t border-primary/10 px-margin-mobile md:px-margin-desktop py-stack-md max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+    <p class="font-body text-[13px] text-on-surface-variant">© 2024 Studio Gabriela Saad. Todos os direitos reservados.</p>
+    <div class="flex gap-4"><a href="#" class="font-body text-[13px] text-on-surface-variant hover:text-primary transition-colors">Privacidade</a><a href="#" class="font-body text-[13px] text-on-surface-variant hover:text-primary transition-colors">Termos de Uso</a></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_20px_40px_rgba(44,44,44,0.18)] hover:scale-110 transition-transform duration-200">
+  <svg class="w-7 h-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+<script>
+  const t=document.getElementById('menu-toggle'),m=document.getElementById('mobile-menu');
+  t.addEventListener('click',()=>m.classList.toggle('open'));
+  m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>m.classList.remove('open')));
+  document.querySelectorAll('.js-faq').forEach(item=>{
+    item.addEventListener('click',()=>{
+      const c=item.querySelector('.accordion-content'),ic=item.querySelector('.faq-icon'),open=c.classList.contains('open');
+      document.querySelectorAll('.js-faq').forEach(o=>{o.querySelector('.accordion-content').classList.remove('open');o.querySelector('.faq-icon').textContent='add';});
+      if(!open){c.classList.add('open');ic.textContent='remove';}
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agenda e Horários - Studio Gabriela Saad</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#364956",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-surface-variant": "#43474b",
+                        "surface": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#b5c9d9",
+                        "secondary-container": "#e7e2da",
+                        "tertiary-fixed": "#fedcc6",
+                        "surface-bright": "#f9f9f9",
+                        "inverse-primary": "#b5c9d9",
+                        "surface-container": "#eeeeee",
+                        "secondary": "#615e58",
+                        "secondary-fixed": "#e7e2da",
+                        "background": "#f9f9f9",
+                        "on-secondary-fixed": "#1d1c17",
+                        "on-secondary-container": "#67645e",
+                        "on-secondary-fixed-variant": "#494741",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary-fixed-variant": "#584232",
+                        "outline": "#73777c",
+                        "on-primary-container": "#def0ff",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-primary-fixed": "#091e29",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#29180a",
+                        "primary-container": "#5b6e7c",
+                        "surface-tint": "#4e616e",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c3c7cb",
+                        "secondary-fixed-dim": "#cac6be",
+                        "on-surface": "#1a1c1c",
+                        "tertiary": "#664f3e",
+                        "tertiary-container": "#806755",
+                        "on-tertiary-container": "#ffebde",
+                        "primary-fixed": "#d1e5f5",
+                        "surface-variant": "#e2e2e2",
+                        "on-background": "#1a1c1c",
+                        "surface-dim": "#dadada",
+                        "primary": "#435663",
+                        "tertiary-fixed-dim": "#e0c0ab"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "stack-sm": "8px",
+                        "margin-desktop": "80px",
+                        "stack-xs": "4px",
+                        "stack-md": "16px",
+                        "stack-2xl": "128px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "32px",
+                        "gutter": "24px",
+                        "stack-xl": "64px"
+                    },
+                    fontFamily: {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-italic": ["Playfair Display"],
+                        "headline-md": ["Archivo Narrow"],
+                        "display-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Archivo Narrow"]
+                    },
+                    fontSize: {
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "display-lg-italic": ["64px", { lineHeight: "72px", fontWeight: "400", fontStyle: "italic" }],
+                        "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "0.1em", fontWeight: "700" }],
+                        "display-mobile": ["40px", { lineHeight: "48px", fontWeight: "400" }],
+                        "display-lg": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "400" }],
+                        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.15em", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md border-b border-primary/20">
+<div class="flex justify-between items-center w-full h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+<a class="font-headline-md text-headline-md tracking-widest text-primary uppercase" href="#">Studio Gabriela Saad</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors hover:opacity-80 duration-300" href="#">Sobre</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors hover:opacity-80 duration-300" href="#">Modalidades</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors hover:opacity-80 duration-300" href="#">Professoras</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors hover:opacity-80 duration-300" href="#">Blog</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors hover:opacity-80 duration-300" href="#">Contato</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center bg-on-primary-fixed text-on-primary font-label-caps text-label-caps px-6 py-3 rounded-full hover:bg-primary transition-all duration-300 active:scale-95" href="#agendamento">
+                Agende uma aula
+            </a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="w-full pt-stack-2xl pb-stack-xl px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-[1200px] mx-auto">
+<h1 class="font-display-mobile text-display-mobile md:font-display-lg md:text-display-lg text-primary mb-stack-md">HORÁRIOS E AGENDA</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Encontre o momento perfeito para sua prática. Nossa grade é pensada para se adaptar ao seu estilo de vida, com turmas reduzidas para um acompanhamento premium.</p>
+</div>
+</section>
+<!-- Schedule Section -->
+<section class="w-full py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-y border-primary/10">
+<div class="max-w-[1200px] mx-auto">
+<!-- Filters -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-stack-xl gap-stack-md">
+<div class="flex flex-wrap gap-stack-sm">
+<span class="font-label-caps text-label-caps text-primary py-2 pr-2 border-r border-primary/20">FILTROS:</span>
+<button class="font-label-caps text-label-caps text-on-primary bg-primary px-4 py-2 rounded-full border border-primary transition-colors">TODAS</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary px-4 py-2 rounded-full border border-primary/20 hover:border-primary transition-colors">PILATES SOLO</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary px-4 py-2 rounded-full border border-primary/20 hover:border-primary transition-colors">AQUÁTICO</button>
+</div>
+</div>
+<!-- Schedule Grid (Bento Style/List) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Day Card -->
+<div class="p-stack-lg border border-primary/10 hover:border-primary/30 transition-colors bg-surface group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-surface-container -mr-8 -mt-8 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500"></div>
+<h3 class="font-headline-md text-headline-md text-primary border-b border-primary/20 pb-stack-sm mb-stack-md">SEGUNDA-FEIRA</h3>
+<ul class="space-y-stack-sm">
+<li class="flex justify-between items-center group/item cursor-pointer">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">07:00 - Pilates Aparelho</span>
+<span class="font-label-caps text-label-caps text-outline">Prof. Ana</span>
+</div>
+<span class="material-symbols-outlined text-outline opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all duration-300">arrow_forward</span>
+</li>
+<li class="w-full h-px bg-primary/5 my-2"></li>
+<li class="flex justify-between items-center group/item cursor-pointer">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">09:00 - Solo Mat</span>
+<span class="font-label-caps text-label-caps text-outline">Prof. Gabriela</span>
+</div>
+<span class="material-symbols-outlined text-outline opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all duration-300">arrow_forward</span>
+</li>
+<li class="w-full h-px bg-primary/5 my-2"></li>
+<li class="flex justify-between items-center group/item cursor-pointer">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">18:30 - Pilates Aparelho</span>
+<span class="font-label-caps text-label-caps text-outline">Prof. Clara</span>
+</div>
+<span class="material-symbols-outlined text-outline opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all duration-300">arrow_forward</span>
+</li>
+</ul>
+</div>
+<!-- Day Card -->
+<div class="p-stack-lg border border-primary/10 hover:border-primary/30 transition-colors bg-surface group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-surface-container -mr-8 -mt-8 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500"></div>
+<h3 class="font-headline-md text-headline-md text-primary border-b border-primary/20 pb-stack-sm mb-stack-md">TERÇA-FEIRA</h3>
+<ul class="space-y-stack-sm">
+<li class="flex justify-between items-center group/item cursor-pointer">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">08:00 - Pilates Solo</span>
+<span class="font-label-caps text-label-caps text-outline">Prof. Gabriela</span>
+</div>
+<span class="material-symbols-outlined text-outline opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all duration-300">arrow_forward</span>
+</li>
+<li class="w-full h-px bg-primary/5 my-2"></li>
+<li class="flex justify-between items-center group/item cursor-pointer">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">10:00 - Aparelho Avançado</span>
+<span class="font-label-caps text-label-caps text-outline">Prof. Ana</span>
+</div>
+<span class="material-symbols-outlined text-outline opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all duration-300">arrow_forward</span>
+</li>
+</ul>
+</div>
+<!-- Day Card (Placeholder for visual rhythm) -->
+<div class="p-stack-lg border border-primary/10 hover:border-primary/30 transition-colors bg-surface group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-surface-container -mr-8 -mt-8 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500"></div>
+<h3 class="font-headline-md text-headline-md text-primary border-b border-primary/20 pb-stack-sm mb-stack-md">QUARTA-FEIRA</h3>
+<ul class="space-y-stack-sm">
+<li class="flex justify-between items-center group/item cursor-pointer">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">07:00 - Pilates Aparelho</span>
+<span class="font-label-caps text-label-caps text-outline">Prof. Ana</span>
+</div>
+<span class="material-symbols-outlined text-outline opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all duration-300">arrow_forward</span>
+</li>
+<li class="w-full h-px bg-primary/5 my-2"></li>
+<li class="flex justify-between items-center group/item cursor-pointer">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">17:00 - Solo Mat</span>
+<span class="font-label-caps text-label-caps text-outline">Prof. Gabriela</span>
+</div>
+<span class="material-symbols-outlined text-outline opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all duration-300">arrow_forward</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Steps Section -->
+<section class="w-full py-stack-2xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-[1000px] mx-auto text-center">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-xl">COMO FUNCIONA</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg relative">
+<!-- Connecting line desktop -->
+<div class="hidden md:block absolute top-[40px] left-[15%] right-[15%] h-px bg-primary/20 -z-10"></div>
+<div class="flex flex-col items-center bg-surface p-stack-md">
+<div class="w-20 h-20 rounded-full border border-primary flex items-center justify-center bg-surface mb-stack-md">
+<span class="material-symbols-outlined text-3xl text-primary">schedule</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-primary mb-stack-xs">1. ESCOLHA O HORÁRIO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Consulte nossa grade acima e identifique a turma ideal para sua rotina.</p>
+</div>
+<div class="flex flex-col items-center bg-surface p-stack-md">
+<div class="w-20 h-20 rounded-full border border-primary flex items-center justify-center bg-surface mb-stack-md">
+<span class="material-symbols-outlined text-3xl text-primary">forum</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-primary mb-stack-xs">2. ENTRE EM CONTATO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Envie uma mensagem via WhatsApp ou preencha nosso formulário rápido.</p>
+</div>
+<div class="flex flex-col items-center bg-surface p-stack-md">
+<div class="w-20 h-20 rounded-full border border-primary flex items-center justify-center bg-surface mb-stack-md">
+<span class="material-symbols-outlined text-3xl text-primary">check_circle</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-primary mb-stack-xs">3. CONFIRME SUA VAGA</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Nossa equipe responderá prontamente para finalizar seu agendamento.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA & Form Section -->
+<section class="w-full py-stack-2xl px-margin-mobile md:px-margin-desktop bg-secondary-fixed" id="agendamento">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-margin-desktop items-center">
+<!-- Image Side -->
+<div class="relative h-[600px] hidden md:block">
+<img alt="Pilates Studio" class="absolute inset-0 w-full h-full object-cover object-center grayscale-[20%] sepia-[10%]" data-alt="A serene, high-end pilates studio interior bathed in soft, natural sunlight. Minimalist wooden reformer machines align perfectly on a light oak floor. The color palette features creme, soft slate blue, and crisp whites, echoing an editorial wellness aesthetic. Deep shadows and bright highlights emphasize the clean lines and tranquil atmosphere of this premium sanctuary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADjJpEh9E7e-snGdZXQAswgejbehkKi06qmcB9Kg-djoPg2LqfPHULGsUsJ6tERVt2gMwgpdEX6b9RR9Tgz1NC_RKrmHLpE7cXLXeWwyY0dF3T1KZ8_bnn8-Y8DCX8PYM9FV-qXNMnpqE_PAM80SiMjRDAlzS1vXkiFJBdxPHOEnzkTyKiJP65lQoV1I8PCK-Yu3gPoInN50Of5KFLUGBWnm3X3PsnUN-u-zkZ_A2AGncd-tkit64_x-ZyZV2CbX_ayZqjGqsfJqn7"/>
+<div class="absolute inset-0 border border-primary/20 m-4 pointer-events-none"></div>
+</div>
+<!-- Form Side -->
+<div class="bg-surface-container-lowest p-margin-mobile md:p-stack-xl shadow-[0_20px_40px_rgba(44,44,44,0.05)] border border-primary/10">
+<h2 class="font-display-mobile md:font-display-lg text-primary mb-stack-sm">INICIE SUA PRÁTICA</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">Preencha os dados abaixo ou fale diretamente conosco pelo WhatsApp para garantir seu horário.</p>
+<form class="space-y-stack-md mb-stack-lg">
+<div>
+<input class="w-full bg-transparent border-0 border-b border-primary/20 py-3 font-label-caps text-label-caps text-on-surface focus:ring-0 focus:border-primary placeholder:text-outline transition-colors" placeholder="SEU NOME" type="text"/>
+</div>
+<div>
+<input class="w-full bg-transparent border-0 border-b border-primary/20 py-3 font-label-caps text-label-caps text-on-surface focus:ring-0 focus:border-primary placeholder:text-outline transition-colors" placeholder="TELEFONE / WHATSAPP" type="tel"/>
+</div>
+<div>
+<input class="w-full bg-transparent border-0 border-b border-primary/20 py-3 font-label-caps text-label-caps text-on-surface focus:ring-0 focus:border-primary placeholder:text-outline transition-colors" placeholder="MODALIDADE DE INTERESSE" type="text"/>
+</div>
+<button class="w-full bg-on-primary-fixed text-on-primary font-label-caps text-label-caps py-4 mt-stack-md hover:bg-primary transition-colors flex justify-center items-center gap-2" type="button">
+                            SOLICITAR AGENDAMENTO <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</form>
+<div class="flex items-center justify-center gap-4">
+<div class="h-px w-full bg-primary/20"></div>
+<span class="font-label-caps text-label-caps text-outline">OU</span>
+<div class="h-px w-full bg-primary/20"></div>
+</div>
+<a class="w-full mt-stack-md border border-primary text-primary font-label-caps text-label-caps py-4 hover:bg-primary hover:text-on-primary transition-colors flex justify-center items-center gap-2" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+                        MENSAGEM WHATSAPP
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="full-width bg-surface-container border-t border-primary/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-xl max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-2">
+<a class="font-headline-md text-headline-md text-primary uppercase mb-stack-md block" href="#">Studio Gabriela Saad</a>
+<p class="font-body-md text-body-md text-on-secondary-container max-w-sm">Elevando a prática do Pilates a uma experiência premium de autoconhecimento e precisão corporal.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-primary mb-stack-md">LINKS</h4>
+<ul class="space-y-stack-sm">
+<li><a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-colors hover:opacity-70" href="#">Privacidade</a></li>
+<li><a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-colors hover:opacity-70" href="#">Termos de Uso</a></li>
+<li><a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-colors hover:opacity-70" href="#">FAQ</a></li>
+<li><a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-colors hover:opacity-70" href="#">Trabalhe Conosco</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<p class="font-body-md text-body-md text-on-secondary-container mt-stack-md md:mt-0 pt-stack-xl md:pt-0">
+                    © 2024 Studio Gabriela Saad. Todos os direitos reservados.
+                </p>
+</div>
+</div>
+</footer>
+<!-- FAB WhatsApp (Only on contextual relevance, here it makes sense as it's a contact/booking page) -->
+<a class="fixed bottom-margin-mobile right-margin-mobile md:bottom-margin-desktop md:right-margin-desktop w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_20px_40px_rgba(44,44,44,0.15)] hover:scale-110 transition-transform z-50" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+</a>
+</body></html>
